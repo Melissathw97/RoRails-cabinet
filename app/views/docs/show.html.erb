@@ -1,0 +1,19 @@
+<h1>
+  <%= @doc.title %>
+</h1>
+
+<p>
+  <%= @doc.content %>
+</p>
+
+<table>
+  <tr>
+    <td><%= link_to "All Docs", docs_path %></td>
+  </tr>
+  <tr>
+    <td><%= link_to "Fix Doc", edit_doc_path(@doc) %></td>
+  </tr>
+  <tr>
+    <td><%= link_to "Trash it", doc_path(@doc), method: :delete, data: { confirm: 'You sure brah?' } %></td>
+  </tr>
+</table>
