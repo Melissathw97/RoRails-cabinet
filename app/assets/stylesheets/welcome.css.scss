@@ -7,25 +7,26 @@ justify-content: center;
 
   .banner_content {
     text-align: center;
+    
+  }
+}
 
-    .button {
-      color: black;
-      background: transparent;
-      padding: 7px 20px;
-      margin: 30px 0 30px;
-      border: 1px solid black;
-      border-radius: 15px;
-      
-      &:hover {
-        background: lightgray;
-        cursor: pointer;
-      }
-      
-      a {
-        text-decoration: none;
-        color: black;
-      }
-    }
+.button {
+  color: black;
+  background: transparent;
+  padding: 7px 20px;
+  margin: 30px 0 30px;
+  border: 1px solid black;
+  border-radius: 15px;
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &:hover {
+    background: lightgray;
+    cursor: pointer;
   }
 }
 

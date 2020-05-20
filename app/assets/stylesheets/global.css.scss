@@ -18,3 +18,14 @@ $light-grey-green: rgb(92, 121, 115);
     }
   }
 }
+
+input[type="text"], input[type="email"], input[type="password"] {
+  background: none;
+  text-align: center;
+  outline: none;
+  border: 2px solid $grey-green;
+  height: 30px;
+  width: 250px;
+  border-radius: 20px;
+  margin: 10px 0 25px;
+}
