@@ -5,6 +5,7 @@ class DocsController < ApplicationController
     @docs = Doc.all.order("created_at DESC")
   end
 
+  # Responsible for view file
   def show
   end
 
@@ -24,13 +25,22 @@ class DocsController < ApplicationController
 
   end 
 
-  def edit 
+  # Responsible for view file
+  def edit
   end 
 
+  # Fetches doc and change parameter
   def update 
+    if @doc.update(doc_params)
+      redirect_to @doc
+    else
+      render "edit"
+    end
   end
 
-  def destroy 
+  def destroy
+    @doc.destroy 
+    redirect_to docs_path
   end
 
   private
