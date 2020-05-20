@@ -1,3 +1,5 @@
-.welcome {
-  font-size: 3em;
-}
+@import 'normalize.scss';
+@import 'global.scss';
+@import 'docs.scss';
+@import 'welcome.scss';
+
