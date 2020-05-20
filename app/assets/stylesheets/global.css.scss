@@ -1,0 +1,20 @@
+$brown-yellow: rgb(207, 171, 52);
+$grey-green: rgb(62,82,78);
+$light-grey-green: rgb(92, 121, 115);
+
+#navbar {
+  background: $grey-green;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: $brown-yellow;
+    font-weight: bold;
+    &:hover {
+      color: $light-grey-green;
+    }
+  }
+}
