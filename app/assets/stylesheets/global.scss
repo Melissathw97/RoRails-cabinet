@@ -1,0 +1,81 @@
+$brown-yellow: rgb(207, 171, 52);
+$grey-green: rgb(62,82,78);
+$light-grey-green: rgb(92, 121, 115);
+
+@font-face {
+  font-family: "Typewriter";
+  src: font-url('../fonts/atwriter.ttf') format ('truetype');
+}
+
+body {
+  font-family: "Typewriter", sans-serif;
+  color: $grey-green;
+}
+
+#navbar {
+  background: $grey-green;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  a {
+    text-decoration: none;
+    color: $brown-yellow;
+    font-weight: bold;
+    margin: 0 15px;
+
+    &:hover {
+      color: $light-grey-green;
+    }
+  }
+}
+
+#form {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 0.9em;
+  font-weight: bold;
+
+  .title {
+    margin: 0px 0 40px;
+  }
+
+  input[type="submit"] {
+    background: $grey-green;
+    color: $brown-yellow;
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: $grey-green;
+
+    &:hover {
+      color: $light-grey-green;
+    }
+  }
+}
+
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  background: none;
+  text-align: center;
+  outline: none;
+  border: 2px solid $grey-green;
+  width: 250px;
+  border-radius: 20px;
+  margin: 10px 0 25px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  height: 30px;
+}
+
+textarea {
+  height: 100px;
+}
