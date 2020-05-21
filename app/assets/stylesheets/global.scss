@@ -16,14 +16,19 @@ body {
   background: $grey-green;
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
   
+  .nav_title {
+    font-size: 1.3em;
+  }
+
   a {
     text-decoration: none;
     color: $brown-yellow;
     font-weight: bold;
-    margin: 0 15px;
+    margin: 0 10px;
 
     &:hover {
       color: $light-grey-green;
@@ -39,6 +44,24 @@ body {
 
   .title {
     margin: 0px 0 40px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    background: none;
+    text-align: center;
+    outline: none;
+    border: 2px solid $grey-green;
+    width: 250px;
+    border-radius: 20px;
+    margin: 10px 0 25px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    height: 30px;
+  }
+  
+  textarea {
+    height: 100px;
   }
 
   input[type="submit"] {
@@ -61,21 +84,3 @@ body {
   }
 }
 
-
-input[type="text"], input[type="email"], input[type="password"], textarea {
-  background: none;
-  text-align: center;
-  outline: none;
-  border: 2px solid $grey-green;
-  width: 250px;
-  border-radius: 20px;
-  margin: 10px 0 25px;
-}
-
-input[type="text"], input[type="email"], input[type="password"] {
-  height: 30px;
-}
-
-textarea {
-  height: 100px;
-}
