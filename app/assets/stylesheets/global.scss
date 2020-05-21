@@ -1,6 +1,4 @@
-$brown-yellow: rgb(207, 171, 52);
-$grey-green: rgb(62,82,78);
-$light-grey-green: rgb(92, 121, 115);
+@import 'variables';
 
 @font-face {
   font-family: "Typewriter";
@@ -84,3 +82,23 @@ body {
   }
 }
 
+.button {
+  background: $grey-green;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &:hover {
+    background: $light-grey-green;
+    cursor: pointer;
+  }
+}
+
+.marg_btn {
+  margin: 40px 10px 30px;
+}

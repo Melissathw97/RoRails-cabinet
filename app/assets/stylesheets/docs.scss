@@ -1,10 +1,42 @@
-// Place all the styles related to the Docs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@import 'variables';
+
 #docs {
-  .doc {
-    background: #78594B;
-    width: 90%;
-    border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  
+  #doc {
+    width: 550px;
+    padding: 10px 40px;
+    border: 3px solid $grey-green;
+    border-radius: 15px;
+    margin: 20px 0;
+
+    .doc_title {
+      
+      a {
+        text-decoration: none;
+        color: $grey-green;
+      }
+    }
+
+    .doc_timestamp {
+      font-style: italic;
+      font-size: 0.9em;
+    }
+  }
+}
+
+#show_doc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+
+  .doc_actions {
+    display: flex;
+    flex-direction: row;
   }
 }

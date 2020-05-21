@@ -1,19 +1,22 @@
-<h1>
-  <%= @doc.title %>
-</h1>
+<div id="show_doc">
+  <h1>
+    <%= @doc.title %>
+  </h1>
 
-<p>
-  <%= @doc.content %>
-</p>
+  <p>
+    <%= @doc.content %>
+  </p>
 
-<table>
-  <tr>
-    <td><%= link_to "All Docs", docs_path %></td>
-  </tr>
-  <tr>
-    <td><%= link_to "Fix Doc", edit_doc_path(@doc) %></td>
-  </tr>
-  <tr>
-    <td><%= link_to "Trash it", doc_path(@doc), method: :delete, data: { confirm: 'You sure brah?' } %></td>
-  </tr>
-</table>
+  <div class="doc_actions">
+    <div class="button marg_btn">
+      <%= link_to "All Docs", docs_path %>
+    </div>
+    <div class="button marg_btn">
+      <%= link_to "Fix Doc", edit_doc_path(@doc) %>
+    </div>
+    <div class="button marg_btn">
+      <%= link_to "Trash it", doc_path(@doc), method: :delete, data: { confirm: 'You sure brah?' } %>
+    </div>
+  </div>
+
+</div>
