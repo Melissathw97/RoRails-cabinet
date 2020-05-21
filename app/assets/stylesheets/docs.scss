@@ -1,0 +1,51 @@
+@import 'variables';
+
+#docs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  
+  #doc {
+    width: 550px;
+    padding: 10px 40px;
+    border: 3px solid $grey-green;
+    border-radius: 15px;
+    margin: 20px 0;
+
+    .doc_title {
+      
+      a {
+        text-decoration: none;
+        color: $grey-green;
+      }
+    }
+    
+    .doc_details {
+      display: flex;
+    
+      .doc_timestamp {
+        font-style: italic;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+#doc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  text-align: center;
+
+  .doc_content {
+    width: 550px;
+    line-height: 25px;
+  }
+  .doc_actions {
+    display: flex;
+    flex-direction: row;
+  }
+}

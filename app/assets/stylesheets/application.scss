@@ -3,8 +3,9 @@
 *= require_tree .
 */
 
-@import 'normalize.css.scss';
-@import 'global.css.scss';
-@import 'docs.css.scss';
-@import 'welcome.css.scss';
+@import 'normalize.scss';
+@import 'global.scss';
+@import 'docs.scss';
+@import 'welcome.scss';
+@import '_variables.scss';
 
