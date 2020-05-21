@@ -1,4 +1,5 @@
 <div id="docs">
+<% unless @docs.blank? %>
   <% @docs.each do |doc| %>
     <div id="doc">
       <h2 class="doc_title">
@@ -13,10 +14,15 @@
         <%= truncate(doc.content, length: 50) %>
       </p>
     </div>
-
   <% end %>
+
+<% else %>
+  <h2>Create Doc!</h2>
+  <p>Start Creating Documents and Organizing your life!</p>
+<% end %>
 
   <div class="button marg_btn">
     <%= link_to "Create Doc", new_doc_path %>
   </div>
+
 </div>
