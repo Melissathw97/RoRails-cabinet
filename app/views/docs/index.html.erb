@@ -5,14 +5,15 @@
       <h2 class="doc_title">
         <%= link_to doc.title, doc %>
       </h2>
+      <div class="doc_details">
+        <p class="doc_summary">
+          <%= truncate(doc.content, length: 40) %>
+        </p>
 
-      <p class="doc_timestamp">
-        ( <%= time_ago_in_words(doc.created_at) %> ago )
-      </p>
-
-      <p class="doc_summary">
-        <%= truncate(doc.content, length: 50) %>
-      </p>
+        <p class="doc_timestamp">
+          ( <%= time_ago_in_words(doc.created_at) %> ago )
+        </p>
+      </div>
     </div>
   <% end %>
 

@@ -20,10 +20,14 @@
         color: $grey-green;
       }
     }
-
-    .doc_timestamp {
-      font-style: italic;
-      font-size: 0.9em;
+    
+    .doc_details {
+      display: flex;
+    
+      .doc_timestamp {
+        font-style: italic;
+        font-size: 0.9em;
+      }
     }
   }
 }
@@ -40,7 +44,6 @@
     width: 550px;
     line-height: 25px;
   }
-  
   .doc_actions {
     display: flex;
     flex-direction: row;

@@ -1,12 +1,7 @@
 @import 'variables';
 
-@font-face {
-  font-family: "Typewriter";
-  src: font-url('../fonts/atwriter.ttf') format ('truetype');
-}
-
 body {
-  font-family: "Typewriter", sans-serif;
+  font-family: sans-serif;
   color: $grey-green;
 }
 
