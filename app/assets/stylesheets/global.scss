@@ -50,8 +50,9 @@ body {
     outline: none;
     border: 2px solid $grey-green;
     width: 250px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 10px 0 25px;
+    padding: 0px 20px;
   }
   
   input[type="text"], input[type="email"], input[type="password"] {
@@ -60,6 +61,7 @@ body {
   
   textarea {
     height: 100px;
+    padding: 15px 20px;
   }
 
   input[type="submit"] {
@@ -84,7 +86,7 @@ body {
 
 .button {
   background: $grey-green;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
 

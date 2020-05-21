@@ -28,13 +28,18 @@
   }
 }
 
-#show_doc {
+#doc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+  text-align: center;
 
+  .doc_content {
+    width: 550px;
+  }
+  
   .doc_actions {
     display: flex;
     flex-direction: row;
