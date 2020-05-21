@@ -3,14 +3,13 @@
     <%= @doc.title %>
   </h1>
 
+  <hr style="width: 550px">
+
   <p class="doc_content">
     <%= @doc.content %>
   </p>
 
   <div class="doc_actions">
-    <div class="button marg_btn">
-      <%= link_to "All Docs", docs_path %>
-    </div>
     <div class="button marg_btn">
       <%= link_to "Fix Doc", edit_doc_path(@doc) %>
     </div>
