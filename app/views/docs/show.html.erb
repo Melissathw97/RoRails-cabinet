@@ -5,9 +5,9 @@
 
   <hr style="width: 550px">
 
-  <p class="doc_content">
-    <%= @doc.content %>
-  </p>
+  <div class="doc_content">
+    <%= simple_format(@doc.content) %>
+  </div>
 
   <div class="doc_actions">
     <div class="button marg_btn">
